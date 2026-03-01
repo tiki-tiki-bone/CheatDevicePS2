@@ -1226,7 +1226,7 @@ int cheatsToggleCheat(cheatsCheat_t *cheat)
 
     if(!cheat->enabled)
     {
-        if((numEnabledCodes + cheat->numCodeLines) >= 250)
+        if((numEnabledCodes + cheat->numCodeLines) >= 640)
         {
             displayError("Too many codes enabled. Try disabling some.");
             return 0;
