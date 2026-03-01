@@ -4,6 +4,12 @@ Cheat Device for PS2 (Custom 640-Codes Build)
 This package is an unofficial custom build based on:
 https://github.com/root670/CheatDevicePS2
 
+## 日本語説明
+-  `CheatDevicePS2` の非公式カスタム版（チートコード上限640行拡張）です。
+- 既存の `CheatDevicePS2` をすでに使っている場合は、基本的に `cheatdevice.elf` の上書きだけで利用できます。
+- 初回導入や構成を作り直す場合は、`CheatDevicePS2.ini` と `CheatDatabase.zip` もあわせて確認してください。
+- 本パッケージの利用は自己責任です。環境によっては正常に動作しない可能性があります。
+-
 ## What is changed
 - Cheat code line limit per game: `250 -> 640`
 - "Too many codes enabled" threshold: `250 -> 640`
@@ -26,11 +32,6 @@ Code changes were limited to:
 3. Extract `CheatDatabase.zip` if your setup expects plain `CheatDatabase.txt`.
 4. Launch and verify your boot path settings in `CheatDevicePS2.ini`.
 
-## 日本語説明
--  `CheatDevicePS2` の非公式カスタム版（チートコード上限640行拡張）です。
-- 既存の `CheatDevicePS2` をすでに使っている場合は、基本的に `cheatdevice.elf` の上書きだけで利用できます。
-- 初回導入や構成を作り直す場合は、`CheatDevicePS2.ini` と `CheatDatabase.zip` もあわせて確認してください。
-- 本パッケージの利用は自己責任です。環境によっては正常に動作しない可能性があります。
 
 ## Notes
 - This is provided as-is, with no warranty.
