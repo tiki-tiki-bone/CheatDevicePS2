@@ -1,49 +1,42 @@
-Cheat Device for PS2
-====================
+Cheat Device for PS2 (Custom 640-Codes Build)
+==============================================
 
-[![Build Status](https://travis-ci.com/root670/CheatDevicePS2.svg?branch=master)](https://travis-ci.com/root670/CheatDevicePS2)
-[![Downloads](https://img.shields.io/github/downloads/root670/CheatDevicePS2/total.svg)](https://github.com/root670/CheatDevicePS2/releases)
-[![License](https://img.shields.io/badge/license-GPL--3.0-blue.svg)](https://github.com/root670/CheatDevicePS2/blob/master/LICENSE)
+This package is an unofficial custom build based on:
+https://github.com/root670/CheatDevicePS2
 
-Cheat Device is a game enhancer for PlayStation 2 games similar to Action 
-Replay, GameShark, and CodeBreaker. It supports booting retail, disc based 
-games as well as ELF files such as OpenPS2Loader or ESR.
+## What is changed
+- Cheat code line limit per game: `250 -> 640`
+- "Too many codes enabled" threshold: `250 -> 640`
+- Core loading/hook behavior remains the original mechanism.
 
-See the [wiki](https://github.com/root670/CheatDevicePS2/wiki) to get started
-using Cheat Device.
+Code changes were limited to:
+- `engine/Makefile`
+- `src/cheats.c`
 
-## Features
-* Easy to navigate menu system similar to CodeBreaker
-* Supports booting retail discs and loader ELFs
-* Fast loading of large cheat lists
-* Save manager for backing up and restoring game saves to/from a flash drive
-* Powered by ps2rd's powerful cheat engine
+## Package contents
+- `cheatdevice.elf`
+- `CheatDevicePS2.ini`
+- `CheatDatabase.zip` (contains `CheatDatabase.txt`)
+- `LICENSE`
+- `README.md` (this file)
 
-## Compiling
-If you have Docker installed, it's easiest to compile Cheat Device using my
-docker image:
+## Quick install
+1. Copy `cheatdevice.elf` to your PS2 launcher location.
+2. Keep `CheatDevicePS2.ini` next to the ELF (or in your expected config path).
+3. Extract `CheatDatabase.zip` if your setup expects plain `CheatDatabase.txt`.
+4. Launch and verify your boot path settings in `CheatDevicePS2.ini`.
 
-### Unix
-```bash
-./docker-make [args...]
-```
+## 日本語説明
+- これは `CheatDevicePS2` の非公式カスタム版（640行対応）です。
+- 既存の `CheatDevicePS2` をすでに使っている場合は、基本的に `cheatdevice.elf` の上書きだけで利用できます。
+- 初回導入や構成を作り直す場合は、`CheatDevicePS2.ini` と `CheatDatabase.zip` もあわせて確認してください。
+- 本パッケージの利用は自己責任です。環境によっては正常に動作しない可能性があります。
 
-### Windows Command Prompt
-```cmd
-docker-make.bat [args...]
-```
-
-### Windows PowerShell
-```ps
-.\docker-make.bat [args...]
-```
-
-See the [compile](https://github.com/root670/CheatDevicePS2/wiki/Compiling) 
-page in the wiki for instructions to build without Docker.
+## Notes
+- This is provided as-is, with no warranty.
+- If you still see "Too many codes enabled", the enabled line count has exceeded 640.
 
 ## License
-Cheat Device is not licensed, sponsored, or endorsed by Sony Computer 
-Entertainment, Inc. This program comes with ABSOLUTELY NO WARRANTY. Cheat 
-Device is licensed under GNU GPL-3. See LICENSE for details. The cheat 
-engine is from ps2rd by Mathias Lafedlt. The bootstrap is based on EE_CORE 
-from OpenPS2Loader.
+Cheat Device is licensed under GNU GPL-3.0. See `LICENSE`.
+The cheat engine is from ps2rd by Mathias Lafedlt.
+The bootstrap is based on EE_CORE from OpenPS2Loader.
