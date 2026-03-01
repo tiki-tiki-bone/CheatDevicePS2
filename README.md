@@ -27,7 +27,7 @@ Code changes were limited to:
 4. Launch and verify your boot path settings in `CheatDevicePS2.ini`.
 
 ## 日本語説明
-- これは `CheatDevicePS2` の非公式カスタム版（640行対応）です。
+-  `CheatDevicePS2` の非公式カスタム版（チートコード上限640行拡張）です。
 - 既存の `CheatDevicePS2` をすでに使っている場合は、基本的に `cheatdevice.elf` の上書きだけで利用できます。
 - 初回導入や構成を作り直す場合は、`CheatDevicePS2.ini` と `CheatDatabase.zip` もあわせて確認してください。
 - 本パッケージの利用は自己責任です。環境によっては正常に動作しない可能性があります。
