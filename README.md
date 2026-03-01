@@ -8,7 +8,7 @@ https://github.com/root670/CheatDevicePS2
 -  `CheatDevicePS2` の非公式カスタム版（チートコード上限640行拡張）です。
 - 既存の `CheatDevicePS2` をすでに使っている場合は、基本的に `cheatdevice.elf` の上書きだけで利用できます。
 - 初回導入や構成を作り直す場合は、`CheatDevicePS2.ini` と `CheatDatabase.zip` もあわせて確認してください。
-- 本パッケージの利用は自己責任です。環境によっては正常に動作しない可能性があります。
+- 本パッケージの利用は自己責任です。動作確認を十分に行っていないため環境・ゲームタイトルによっては正常に動作しない可能性があります。
 
 ## What is changed
 - Cheat code line limit per game: `250 -> 640`
